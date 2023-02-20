@@ -1,0 +1,103 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\chenchen\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\chenchen\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\chenchen\bin;C:\Program Files\VanDyke Software\Clients;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\chenchen\anaconda3\Library\lib;C:\Users\chenchen\anaconda3;C:\Users\chenchen\anaconda3\Library\mingw-w64\bin;C:\Users\chenchen\anaconda3\Library\usr\bin;C:\Users\chenchen\anaconda3\Library\bin;C:\Users\chenchen\anaconda3\Scripts;C:\Users\chenchen\AppData\Local\Microsoft\WindowsApps;C:\Users\chenchen\AppData\Roaming\npm;E:\Program Files\Microsoft VS Code\bin;E:\Program Files\Fiddler;C:\Users\chenchen\AppData\Local\Microsoft\WindowsApps;C:\Users\chenchen\anaconda3\Library\lib;C:\Users\chenchen\AppData\Local\JetBrains\Toolbox\scripts;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 10.84.2.95:8081
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+
+npm manifest: 
+  {
+    "name": "nui-ui-template",
+    "version": "1.0.0",
+    "private": true,
+    "description": "京 Taro模板测试",
+    "templateInfo": {
+      "name": "default",
+      "typescript": true,
+      "css": "sass"
+    },
+    "scripts": {
+      "build:weapp": "taro build --type weapp",
+      "build:swan": "taro build --type swan",
+      "build:alipay": "taro build --type alipay",
+      "build:tt": "taro build --type tt",
+      "build:h5": "taro build --type h5",
+      "build:rn": "taro build --type rn",
+      "build:qq": "taro build --type qq",
+      "build:jd": "taro build --type jd",
+      "build:quickapp": "taro build --type quickapp",
+      "dev:weapp": "npm run build:weapp -- --watch",
+      "dev:swan": "npm run build:swan -- --watch",
+      "dev:alipay": "npm run build:alipay -- --watch",
+      "dev:tt": "npm run build:tt -- --watch",
+      "dev:h5": "npm run build:h5 -- --watch",
+      "dev:rn": "npm run build:rn -- --watch",
+      "dev:qq": "npm run build:qq -- --watch",
+      "dev:jd": "npm run build:jd -- --watch",
+      "dev:quickapp": "npm run build:quickapp -- --watch"
+    },
+    "browserslist": [
+      "last 3 versions",
+      "Android >= 4.1",
+      "ios >= 8"
+    ],
+    "author": "",
+    "dependencies": {
+      "@babel/runtime": "^7.7.7",
+      "@tarojs/components": "3.6.1",
+      "@tarojs/helper": "3.6.1",
+      "@tarojs/plugin-platform-weapp": "3.6.1",
+      "@tarojs/plugin-platform-alipay": "3.6.1",
+      "@tarojs/plugin-platform-tt": "3.6.1",
+      "@tarojs/plugin-platform-swan": "3.6.1",
+      "@tarojs/plugin-platform-jd": "3.6.1",
+      "@tarojs/plugin-platform-qq": "3.6.1",
+      "@tarojs/plugin-platform-h5": "3.6.1",
+      "@tarojs/runtime": "3.6.1",
+      "@tarojs/shared": "3.6.1",
+      "@tarojs/taro": "3.6.1",
+      "@tarojs/plugin-framework-react": "3.6.1",
+      "@tarojs/react": "3.6.1",
+      "react-dom": "^18.0.0",
+      "react": "^18.0.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.8.0",
+      "@tarojs/cli": "3.6.1",
+      "@types/webpack-env": "^1.13.6",
+      "@types/react": "^18.0.0",
+      "webpack": "5.69.0",
+      "@tarojs/webpack5-runner": "3.6.1",
+      "babel-preset-taro": "3.6.1",
+      "eslint-config-taro": "3.6.1",
+      "eslint": "^8.12.0",
+      "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+      "react-refresh": "^0.11.0",
+      "eslint-plugin-react": "^7.8.2",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "stylelint": "^14.4.0",
+      "@typescript-eslint/parser": "^5.20.0",
+      "@typescript-eslint/eslint-plugin": "^5.20.0",
+      "typescript": "^4.1.0",
+      "postcss": "^8.4.18"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,144 @@
+//在最外层,我用View包裹起来，felx变成左右布局;
+.container {
+  width: 100%;
+  height: 100%;
+
+  .tool_bar {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    
+    .address_picker {
+      display: flex;
+      flex-direction: column;
+      .address {
+        font-size: 32px;
+        line-height: 32px;
+        color: #000000;
+      }
+      .desc {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 24px;
+        color: #aaaaaa;
+      }
+    }
+
+    .in_out {
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      overflow: hidden;
+
+      .in_out_item {
+        width: 100px;
+        height: 60px;
+        font-size: 28px;
+        line-height: 60px;
+        text-align: center;
+        color: #aaaaaa;
+        background-color: #f2f2f2;
+      }
+
+      .in_out_item_active {
+        background: #000000;
+        color: #FFF;
+      }
+    }
+    
+  }
+
+  .category {
+  
+    display: flex;
+    width: 100%;
+    height: calc(100% - 160px - 120px);
+    .nav {
+      flex-basis: 160px;
+      width: 160px;
+      overflow-y: scroll;
+      background-color: #fff;
+      color: #666666;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 40px;
+
+      .nav_title {
+        padding: 20px 20px;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .nav_active {
+        background: #f7f7ff;
+        color: #333333;
+        font-weight: 500;
+        border-right: 1px solid #333;
+      }
+    }
+
+    .content {
+      flex: 1;
+      margin-left: 20px;
+      overflow-y: scroll;
+
+      .content_scroll {
+        height: 100%;
+        overflow-y: scroll;
+      }
+
+      .content_title {
+        height: 40px;
+        padding: 24px 0px;
+        color: #000;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 40px;
+      }
+
+      .content_center_box {
+        background: #ffffff;
+
+        .content_center {
+          display: flex;
+          box-sizing: border-box;
+          padding: 20px 40px 20px 20px;
+          font-weight: 400;
+          line-height: 40px;
+
+          .content_doctor {
+            display: flex;
+            flex: 1;
+
+            .doctor_name {
+              margin-right: 12px;
+              color: #333333;
+              font-size: 28px;
+            }
+
+            .doctor_level {
+              margin-left: 28px;
+              color: #9c9cae;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .content_footer {
+        padding: 20px 0px;
+        color: #9c9cae;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,9 @@
+
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // 行数
+  -webkit-box-orient: vertical; // 盒子总内容数字排列
+}
